@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Sofia+Sans+Semi+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://getwallpapers.com/wallpaper/full/c/1/6/6346.jpg);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/503/398/475/gradient-shapes-abstract-minimalism-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.resume{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    color: white;
+    /* animation: infinite; */
+}
+
+.sidebar {
+    background-color: #191b1c5c;
+    /* width: 65vw; */
+    height: 100vh;
+    /* padding: 20px; */
+    font-size: 20px;
+    transition: transform 0.3s ease-in;
+    display: flex;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 32px;
+}
+
+.sidebar nav li {
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.sidebar img {
+    border-radius: 200px;
+    height: 150px;
+    width: 150px;
+}
+
+
+.main {
+    /* background-color: antiquewhite; */
+    width: 100vw;
+    height: 100vh;
+    animation: 2s ease-out 0s 1 slideInFromBottom;
+    /* display: flex; */
+}
+
+.mcontainer {
+    /* background-color: #22404c5c; */
+    width: 88vw;
+    height: 65vh;
+    /* padding-left: 300px; */
+    margin: 106px auto;
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
+}
+
+.pic img {
+    height: 55vh;
+    width: 22vw;
+    background-color: #191b1c5c;
+    border-radius: 256px;
+}
+
+.info {
+    /* display: flex; */
+    padding-left: 11vw;
+    margin: auto;
+    margin-top: 17px;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px
+}
+
+.intro {
+    font-size: 1em;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.name {
+    font-size: 2em;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Philosopher', sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0096e6, 0 0 40px #0071e6, 0 0 50px #007ee6, 0 0 60px #0078e6, 0 0 70px #009ce6;
+}
+
+
+.about {
+    padding-top: 20px;
+    font-size: 0.8em;
+    display: flex;
+}
+
+.about {
+    /* height: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.about p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.about p span.typed-text {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 20px #ff99cc,
+        -2px 1px 30px #ff99cc;
+}
+
+.about p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.about p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+
+.moreabout {
+    padding: 20px 0;
+    font-size: 0.6em;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    ;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    border-radius: 20px;
+    /* margin: 0 3px;
+    padding: 8px 14px; */
+    cursor: pointer;
+    color: white;
+    background-color: rgb(63, 177, 248);
+    font-weight: bold;
+    font-size: 15px;
+    width: 9vw;
+}
+
+.buttons button:hover {
+    background-color: white;
+    /* color: aqua; */
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: rgb(8, 7, 7);
+}
+
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 19px;
+    font-family: 'Source Code pro', monospace;
+    width: 65vw;
+    background-color: #22404cba;
+    margin: 25px auto;
+    border-radius: 3vw;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.contactform:hover {
+    box-shadow: 0 0 1px #3ab2e6, 0 0 0px #b4e7f6, 0 0 30px #b8dff5, 0 0 0px #3895f5, 0 0 0px #c1dbf1, 0 0 0px #aacdee, 0 0 19px #9dd6f0;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+.contactform form div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input,
+textarea {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px;
+    padding: 3px;
+}
+
+/* .contactform form button {
+    width: 65px;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 3px;
+} */
+
+.contactform h2 {
+    text-align: center;
+    color: #fff;
+    /* text-underline-offset: 20px; */
+    text-shadow: 3px 3px 20px #ff99cc,
+        -2px 1px 30px #ff99cc;
+    font-family: 'Philosopher', sans-serif;
+    /* margin-left: 15px; */
+    padding-bottom: 40px;
+    font-size: 3em;
+}
+
+#emailHelp {
+    font-size: 15px;
+    color: rgb(129 197 78);
+    ;
+    margin: 0, 5px;
+    padding: 0 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.btn {
+    border-radius: 20px;
+    margin: 3px 3px;
+    padding: 8px 14px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(63, 177, 248);
+    font-weight: bold;
+    font-size: 15px;
+    width: 8vw;
+}
+
+.btn:hover {
+    background-color: white;
+    /* color: aqua; */
+}
+
+.skillcontainer {
+    padding-left: 5vw;
+}
+
+.social {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    /* padding-left: 130px; */
+}
+
+.social figure {
+    padding-left: 26px;
+    text-align: center;
+}
+
+.myintro {
+    padding: 2vw;
+    margin: 15px;
+    text-align: justify;
+    font-size: 1em;
+    animation: 2s ease-out 0s 1 slideInFromBottom;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    /* color: black; */
+}
+
+.myintro h4 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 3em;
+    margin: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a237f4, 0 0 40px #a237f4, 0 0 50px #a237f4, 0 0 60px #a237f4, 0 0 70px #a237f4;
+}
+
+.myintro p {
+    font-size: 1.5em;
+    padding: 20px 30px 0 0;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+progress {
+    accent-color: rgb(171, 255, 128);
+    width: 35vw;
+    height: 4vh;
+}
+
+#html::before {
+    content: '80%';
+}
+
+#css::before {
+    content: '60%';
+}
+
+#javascript::before {
+    content: '50%';
+}
+
+#python::before {
+    content: '50%';
+}
+
+#html,
+#css,
+#javascript,
+#python {
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: 1000;
+}
+
+/* 
+.skillset {
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    /* align-items: center;
+} */
+
+/* .skill {
+    /* align-items: center;
+    background-color: red;
+    width: 600px;
+    height: 10px;
+    border: 3px solid black;
+}*/
+
+.t5 {
+    background-color: aqua;
+    width: 400px;
+}
+
+/* .project{
+    margin: 0 -5px;
+    
+}
+.project:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+.main h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 3em;
+    text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+.main h6 {
+    padding-left: 5vw;
+    padding-bottom: 3vh;
+    font-size: 1.7em;
+    font-family: 'Philosopher', sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0096e6, 0 0 40px #0071e6, 0 0 50px #007ee6, 0 0 60px #0078e6, 0 0 70px #009ce6;
+}
+
+.column {
+    float: left;
+    /* width: 69%; */
+    padding: 10px 25px;
+    box-shadow: 0 6px 8px 0 rgb(0 0 0);
+}
+
+.column img {
+    width: 24.6vw;
+    height: 23vh;
+    padding-left: px;
+    box-shadow: 3px 3px 10px #f3f3f3,
+        -2px 1px 16px #ffffff;
+
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 30px 91px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+
+/* Style the counter cards */
+.card {
+    padding-left: 10px;
+    text-align: justify;
+    color: black;
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px 10px #f3f3f3,
+        -2px 1px 16px #ffffff;
+    width: 24vw;
+}
+
+
+@media (max-width: 1000px) {
+    /* * {
+        /* background-color: rgb(255, 236, 129);
+    } */
+
+    .about p {
+        font-size: 20px;
+    }
+
+    .pic img {
+        display: none;
+    }
+
+    .info,
+    .contactform h2 {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        padding: 2px 4px;
+        margin: 18px 0;
+        width: 34vw;
+    }
+
+    .btn {
+
+        width: 25vw;
+    }
+
+    .social {
+        display: none;
+    }
+    .skillcontainer{
+        font-size: 13px;
+    }
+    #html,
+#css,
+#javascript,
+#python {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(55, 0, 255);
+    font-weight: 1000;
+}
+
+    /* .sidebar{
+        transform: translate(-300px, 0px);
+        position: absolute;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 90%;
+        display: block;
+        margin-bottom: 7px;
+        padding: 0px 15px;
+    }
+    .main h6{
+        font-size: 17px;
+
+    }
+
+    .sidebar nav li {
+        padding: 20px 0;
+    }
+
+    .main h1 {
+        font-size: 30px;
+    }
+
+    .main h3 {
+        display: none;
+    }
+
+    .main h6 {
+        padding-bottom: 0px;
+    }
+
+    .row {
+        margin: 10px 0px
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .column img {
+        display: none;
+    }
+
+    .myintro p {
+        margin: -10px 30px;
+        font-size: 10px;
+    }
+    .myintro h4 {
+        font-family: 'Philosopher', sans-serif;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a237f4, 0 0 40px #a237f4, 0 0 50px #a237f4, 0 0 60px #a237f4, 0 0 70px #a237f4;
+        font-size: 1.8em;
+        padding: 0 15vw;
+    }
+
+    .contactform {
+        padding: 37px 34px;
+        /* padding-top: 0px; */
+        /* font-family: 'Sofia Sans Semi Condensed', sans-serif; */
+        width: 65vw;
+        background-color: #22404cba;
+        margin: 22px auto;
+        border-radius: 3vw;
+
+    }
+
+    .contactform form {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .contactform form div {
+        padding: 8px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (1200px>=height>=800px) {
+
+    .mcontainer,
+    .myintro p {
+        margin: 0px 30px;
+        font-size: 17px;
+    }
+    .contactform{
+        margin: 104px 33px;
+    }
+    .myintro h4 {
+        font-family: 'Philosopher', sans-serif;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a237f4, 0 0 40px #a237f4, 0 0 50px #a237f4, 0 0 60px #a237f4, 0 0 70px #a237f4;
+        font-size: 1.7em;
+        padding: 0 15vw;
+    
+    }
+
+    .mcontainer {
+        padding-top: 105px;
+    }
+
+    .info,
+    .contactform form {
+        font-size: 30px;
+    }
+    .contactform form {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 30px;
+    }
+}
+
+.sidebargo {
+    transform: translate(-300px, 0px);
+    position: absolute;
+    width: 19vw;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 188px;
+    width: 1em;
+    height: 1em;
+}
+
+/* input[type=text],[type=email] ,textarea {
+    width: 26vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  } */
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
